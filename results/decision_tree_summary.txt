@@ -1,0 +1,40 @@
+n= 12300 
+
+node), split, n, loss, yval, (yprob)
+      * denotes terminal node
+
+ 1) root 12300 6150 Normal (0.500000000 0.500000000)  
+   2) kurtosis>=-0.2296599 5261  353 Normal (0.932902490 0.067097510)  
+     4) sd< 0.0669084 4656  125 Normal (0.973152921 0.026847079)  
+       8) skewness>=-0.984272 4615   88 Normal (0.980931744 0.019068256) *
+       9) skewness< -0.984272 41    4 Ventricular (0.097560976 0.902439024) *
+     5) sd>=0.0669084 605  228 Normal (0.623140496 0.376859504)  
+      10) kurtosis>=0.3630533 326    2 Normal (0.993865031 0.006134969) *
+      11) kurtosis< 0.3630533 279   53 Ventricular (0.189964158 0.810035842) *
+   3) kurtosis< -0.2296599 7039 1242 Ventricular (0.176445518 0.823554482)  
+     6) sd< -0.8908923 892  118 Normal (0.867713004 0.132286996) *
+     7) sd>=-0.8908923 6147  468 Ventricular (0.076134700 0.923865300)  
+      14) sd< 0.1713226 1890  351 Ventricular (0.185714286 0.814285714)  
+        28) skewness>=0.08555652 201   63 Normal (0.686567164 0.313432836) *
+        29) skewness< 0.08555652 1689  213 Ventricular (0.126110124 0.873889876) *
+      15) sd>=0.1713226 4257  117 Ventricular (0.027484144 0.972515856) *
+
+Classification tree:
+rpart::rpart(formula = tree_formula, data = train_scaled, method = "class", 
+    control = rpart::rpart.control(cp = 0.005, minsplit = 50, 
+        maxdepth = 8))
+
+Variables actually used in tree construction:
+[1] kurtosis sd       skewness
+
+Root node error: 6150/12300 = 0.5
+
+n= 12300 
+
+         CP nsplit rel error  xerror      xstd
+1 0.7406504      0   1.00000 1.02504 0.0090139
+2 0.1066667      1   0.25935 0.26000 0.0060647
+3 0.0140650      2   0.15268 0.15398 0.0048073
+4 0.0060976      4   0.12455 0.12862 0.0044236
+5 0.0053659      6   0.11236 0.12683 0.0043949
+6 0.0050000      7   0.10699 0.11919 0.0042691

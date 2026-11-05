@@ -1,0 +1,16 @@
+# R files
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+
+# Dataset files (avoid uploading large raw dataset)
+data/
+
+# Temporary files
+*.tmp
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db

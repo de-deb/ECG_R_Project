@@ -1,0 +1,27 @@
+
+Call:
+glm(formula = reformulate(features, response = "ventricular"), 
+    family = binomial(), data = balanced_train, control = glm.control(maxit = 100))
+
+Coefficients:
+             Estimate Std. Error z value Pr(>|z|)    
+(Intercept) -0.290556   0.078965  -3.680 0.000234 ***
+mean         0.006803   0.147412   0.046 0.963193    
+median      -0.236293   0.159584  -1.481 0.138690    
+sd           8.671491   0.332044  26.116  < 2e-16 ***
+range       -2.499600   0.173624 -14.397  < 2e-16 ***
+IQR         -1.656222   0.127059 -13.035  < 2e-16 ***
+RMS         -2.103369   0.232390  -9.051  < 2e-16 ***
+skewness    -1.427478   0.097965 -14.571  < 2e-16 ***
+kurtosis    -2.618215   0.169850 -15.415  < 2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 17051.4  on 12299  degrees of freedom
+Residual deviance:  3868.5  on 12291  degrees of freedom
+AIC: 3886.5
+
+Number of Fisher Scoring iterations: 8
+

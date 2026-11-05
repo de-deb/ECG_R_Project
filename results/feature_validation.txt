@@ -1,0 +1,73 @@
+ECG FEATURE DATASET VALIDATION
+==============================
+Total beats: 125535
+Feature columns: 20
+Unique records: 71
+Duplicate record/sample pairs: 0
+
+MISSING VALUES BY COLUMN
+       column missing_count
+    record_id             0
+       sample             0
+ time_seconds             0
+   annotation             0
+      channel             0
+     baseline             0
+         mean             0
+       median             0
+           sd             0
+     variance             0
+          min             0
+          max             0
+        range             0
+           q1             0
+           q3             0
+          IQR             0
+          RMS             0
+       energy             0
+     skewness             0
+     kurtosis             0
+
+NON-FINITE VALUES IN NUMERIC COLUMNS
+       column nonfinite_count
+       sample               0
+ time_seconds               0
+     baseline               0
+         mean               0
+       median               0
+           sd               0
+     variance               0
+          min               0
+          max               0
+        range               0
+           q1               0
+           q3               0
+          IQR               0
+          RMS               0
+       energy               0
+     skewness               0
+     kurtosis               0
+
+BASIC FEATURE CHECKS
+Negative standard deviations: 0
+Negative variances: 0
+Negative RMS values: 0
+Negative energy values: 0
+
+ANNOTATION COUNTS
+ annotation beat_count
+          /       7025
+          a        154
+          A       3064
+          e         21
+          E        106
+          f        982
+          F        824
+          j        235
+          J        113
+          L       9611
+          N      87217
+          Q         33
+          R       8260
+          S          2
+          V       7888

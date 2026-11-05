@@ -1,0 +1,12 @@
+PRIMARY ECG ANALYSIS DATASET
+============================
+Original dataset beats: 125535
+Original dataset records: 71
+Removed x_ record beats: 16083
+Retained beats: 109452
+Retained original records: 48
+Remaining x_ records: 0
+
+This dataset excludes x_ records because their sample positions
+overlap with the corresponding original records.
+The original combined dataset remains unchanged.
